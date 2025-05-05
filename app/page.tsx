@@ -30,15 +30,23 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          {/* Add Hero Images Here.  Fantastically, this switches out the
+          background hero image based on the screen size. */}
+
+          <Image
+            src="/hero-mobile.png"
+            alt="Screenshot of dashboard project"
+            width={560}
+            height={620}
+            className="block md:hidden"
+          />
           <Image
             src="/hero-desktop.png"
             alt="Screenshot of dashboard project"
             width={1000}
             height={760}
             className="hidden md:block"
-          />
-        </div>
+          />        </div>
       </div>
     </main>
   );
